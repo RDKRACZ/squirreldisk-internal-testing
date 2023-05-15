@@ -27,8 +27,9 @@ jobs:
           sudo sh ./get-docker.sh
           docker pull fedora
           docker run --name fedora fedora
-          docker exec -it fedora /bin/sh
+          docker exec fedora /bin/sh
           uname -a
+          docker exec fedora uname -a
 
       - name: Rust setup
         uses: dtolnay/rust-toolchain@stable
