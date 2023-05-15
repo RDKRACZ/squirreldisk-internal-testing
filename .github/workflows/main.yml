@@ -26,9 +26,8 @@ jobs:
           curl -fsSL https://get.docker.com -o get-docker.sh
           sudo sh ./get-docker.sh
           docker pull fedora
-          docker image ls
-          docker run fedora
-          docker exec -it fedora /bin/sh
+          docker run be300d2b6d94
+          docker exec -it be300d2b6d94 /bin/sh
           uname -a
 
       - name: Rust setup
